@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.inputField::placeholder {
+  color: white;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+.radioContainer,
+.termsContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radioContainer label,
+.termsContainer label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submitBtn {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  width: auto;
+  max-width: 400px;
+  margin: 13px 0px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .submitBtn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .inputField {
+    font-size: 0.9rem;
+  }
+
+  .submitBtn {
+    font-size: 0.9rem;
+  }
+}

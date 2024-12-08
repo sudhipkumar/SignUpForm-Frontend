@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Signup Page to create new account" />
+    <title>Signup Form</title>
+    <link rel="icon" type="image/x-icon" href="icon/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main class="mainContainer">
+      <h1 class="heading">Signup</h1>
+      <form action="" method="post" class="form">
+        <div class="formContainer">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="inputField"
+            placeholder="Full Name"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputField"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="inputField"
+            placeholder="Password"
+            required
+          />
+
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            class="inputField"
+            placeholder="Confirm Password"
+            required
+          />
+
+          <input type="date" name="dob" id="dob" class="inputField" required />
+
+          <div class="radioContainer">
+            <label>
+              <input type="radio" name="user-type" value="student" required />
+              Student
+            </label>
+
+            <label>
+              <input type="radio" name="user-type" value="employee" required />
+              Employee
+            </label>
+          </div>
+
+          <div class="termsContainer">
+            <label>
+              <input type="checkbox" name="terms" required />
+              I agree to all the Terms and Conditions
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" id="submit" class="submitBtn">Signup</button>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
