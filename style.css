@@ -73,7 +73,7 @@ body {
   margin: 13px 0px;
 }
 
-/* Responsive Design */
+/* Responsive Design For Small Screens */
 @media screen and (max-width: 600px) {
   .heading {
     font-size: 2rem;
